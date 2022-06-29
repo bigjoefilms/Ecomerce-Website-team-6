@@ -80,8 +80,10 @@ ul li a{
 /* feature-path-text begins */
 
 .feature-path-text {
-    display: block;
-    position: relative;
+    display: inline-block;
+    position: absolute;
+    margin-top: 3%;
+    
 }
 .f-path-text-p{
     text-transform: uppercase;    
@@ -92,7 +94,12 @@ ul li a{
 }
 .f-path-bold {
     color: hsl(0, 0%, 0%);
-    width: 50%;
-    height: 70px;
+    width: 60%;
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+.feature-path-absolute {
+    position: relative;
+    left: 150%;
+
 }
