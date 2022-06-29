@@ -1,127 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
-:root  {
-    /* SPACING SIZES*/
-    --base:1;
-    --sizer-1: clamp((calc(var(var(var(--base) * 1.26rem)), 30vw, 400px);
-    --sizer-2: clamp(calc(var(var(var(--base) * 1.875rem)), 30vw, 400px);
-    --sizer-3: clamp(calc(var(var(var(--base) * 2.25rem)), 30vw, 400px);
-    --sizer-4: clamp(calc(var(var(var(--base) * 2.5rem)), 30vw, 400px);
-    --sizer-5: clamp(calc(var(var(var(--base) * 2.8125rem)), 30vw, 400px);
-
-    /* FONT-SIZES */
-
-    --base-fs:16px;
-    --fs-1: clamp(calc(var(var(var(--base) * .8rem)), 30vw + 1rem, 400px);
-    --fs-2: clamp((var(--base)rem), 30vw + 1rem, 400px);
-    --fs-3: clamp(calc(var(var(var(--base) * 1.75rem)), 30vw + 1rem, 400px);
-    --fs-4: clamp(calc(var(var(var(--base) * 2.25rem)), 30vw + 1rem, 400px);
-      
-    /* COLORS */
-    --bkg:  hsl(25, 100% 99%);
-    --accent: hsl(26, 100%, 55%);
-    --accent-pale:hsl(25, 100%, 94%);
-    --text:hsl(0, 0%, 0%);
-    --text-opacity:hsl(25, 100%, 3% .75%);
-    --alt-bkg: hsl(220, 13%, 13%);
-    --alt-bkg1: hsl(219, 9%, 45%);
-    --alt-bkg2: hsl(220, 14%, 75%);
-    --alt-bkg3: hsl(223, 64%, 98%);
-}
-/* Utility ASSETS */
-.fs-1 {
-    font-size: var(--fs-1);
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
 }
 
-.fs-1 {
-    font-size: var(--fs-1);
-
-}
-.fs-1 {
-    font-size: var(--fs-1);
-
-}
-.fs-1 {
-    font-size: var(--fs-1);
-
-}
-.sizen-1{
-    font-size: var(--sizer-1);
-}
-.sizen-2{
-    font-size: var(--sizer-2);
-}
-.sizen-3{
-    font-size: var(--sizer-3);
-}
-.sizen-4{
-    font-size: var(--sizer-4);
-}
-.sizen-5{
-    font-size: var(--sizer-5);
+.container{
+    background-color: rgba(rgb(231, 222, 222), rgb(216, 230, 216), rgb(244, 244, 248), alpha);
+    display: flex;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.bg-bkg{
-    background-color: var(--bkg);
+.nav-toggle{
+    display: none;
+    position: relative;
+    left: 1rem;
 }
-.bg-accent{
-    background-color: var(--accent);
+
+.hidden{
+    display: none;
 }
-.bg-accent-pale{
-    background-color: var(--accent-pale);
+
+.madehead{
+    font-family:'Kumbh Sans', sans-serif;
 }
-.bg-text{
-    background-color: var(--text);
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+    font-family:'Kumbh Sans', sans-serif;
 }
-.bg-text-opacity{
-    background-color: var(--text-opacity);
+ul li a{
+    text-decoration: none;
+    padding: 0 24px;
 }
-.bg-alt-bkg{
-    background-color: var(--alt-bkg);
+
+@media all and (max-width:720px){
+    header .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header .container .madehead h1{
+        position: absolute;
+        left: 83px;
+    }
+    header .container .navbar{
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: 0,5s height ease-in-out;
+    }
+    .navIcon{
+        margin-top: 6px;
+
+    }
+
+    li{
+        display: block;
+        text-align: center;
+        padding: 1.5 rem 0;
+    }
+    header .container .madehead{
+       padding: 10px;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-toggle .navIcon{
+        padding: 10px 0;
+    }
+
 }
-.bg-alt-bkg1{
-    background-color: var(--alt-bkg1);
-}
-.bg-alt-bkg2{
-    background-color: var(--alt-bkg2);
-}
-.bg-alt-bkg3{
-    background-color: var(--alt-bkg3);
-}
-.-bkg{
-    color: var(--bkg);
-}
-.-accent{
-    color: var(--accent);
-}
-.-accent-pale{
-    color: var(--accent-pale);
-}
-.-text{
-    color: var(--text);
-}
-.-text-opacity{
-    color: var(--text-opacity);
-}
-.-alt-bkg{
-    color: var(--alt-bkg);
-}
-.-alt-bkg1{
-    color: var(--alt-bkg1);
-}
-.-alt-bkg2{
-    color: var(--alt-bkg2);
-}
-.-alt-bkg3{
-    color: var(--alt-bkg3);
-}
-.grid {
-    display:grid;
-}
-.flex{
-    display: grid;
-}
-body{
-    font-family: font-family: 'Kumbh Sans', sans-serif;;
-}
+/* End of header */
