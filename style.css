@@ -76,3 +76,23 @@ ul li a{
 
 }
 /* End of header */
+
+/* feature-path-text begins */
+
+.feature-path-text {
+    display: block;
+    position: relative;
+}
+.f-path-text-p{
+    text-transform: uppercase;    
+}
+.f-path-text-p{
+    color:hsl(26, 100%, 55%);
+    height: 30px;
+}
+.f-path-bold {
+    color: hsl(0, 0%, 0%);
+    width: 50%;
+    height: 70px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
