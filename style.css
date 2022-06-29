@@ -101,5 +101,10 @@ ul li a{
 .feature-path-absolute {
     position: relative;
     left: 150%;
+}
 
+.f-path-text-p2 {
+    margin-top: 8%;
+    font-size: 16px;
+    width: 60%;
 }
