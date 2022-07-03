@@ -214,14 +214,52 @@ ul li a{
       }
       
 
+/*popup-image section */
 
-      @media screen and (min-width: 1440px) {
-        .container {
-          width: 77%;
-          margin: 0 auto;
-        } 
-      }
+
+    .lightbox .popup-image {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 100;
+      display: none;
+    }
+    .lightbox .popup-image  span{
+      position: fixed;
+      top: 0; right: 0;
+      font-size: 50px;
     
+      color :#000;
+      cursor: pointer;
+      z-index: 100;
+    }
+
+    .lightbox .popup-image img {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      border: 5px solid #fff;
+      border-radius: 5px;
+      width: 700px;
+      object-fit: cover;
+    }
+
+
+    @media screen and (min-width: 1440px) {
+      .lightbox .popup-image{
+        width: 77%;
+        margin: 0 auto;
+      } 
+    }
+
+
+
+
+
+
+
+
 
 
 
